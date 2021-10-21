@@ -12,9 +12,14 @@ p {
   box-sizing: border-box;
 }
 
+section {
+  margin-top: 100px;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: auto;
+  padding: 0 10px;
 }
 
 .text-dark {
@@ -53,7 +58,7 @@ p {
 
 .header {
   background-image: url(../img/header.jpg);
-  background-size: contain;
+  background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 10px;
 }
@@ -130,6 +135,26 @@ p {
   width: 100%;
   height: 1px;
   background-color: #fff;
+}
+
+.countries__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style-type: none;
+}
+.countries__figure {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #d9d9de;
+  border-top: none;
+}
+.countries__img {
+  width: 256px;
+  height: 110px;
+}
+.countries__caption {
+  padding: 12px 0 19px 19px;
 }
 
 /*# sourceMappingURL=style.css.map */
