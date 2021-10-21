@@ -1,0 +1,136 @@
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$color-light: #fff;
+$color-dark: #1f1e1e;
+$color-accent: #886239;
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.text-dark {
+  color: $color-dark;
+}
+
+.text-light {
+  color: $color-light;
+}
+
+.logo {
+  width: 285px;
+  height: 60px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+}
+
+.button {
+  display: inline-block;
+  color: $color-light;
+  font-size: 18px;
+  background-color: $color-accent;
+  border: 0;
+  border-radius: 30px;
+  padding: 20px 55px;
+  text-decoration: none;
+}
+.phone {
+  text-decoration: none;
+  color: $color-light;
+  padding: 12px 31px;
+  border-radius: 22px;
+  background-color: $color-accent;
+}
+
+.header {
+  background-image: url(../img/header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  &__phone {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+    &_content {
+      padding-top: 440px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 430px;
+      line-height: 28px;
+    }
+  }
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-family: PT, sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+  }
+  &__arrow {
+    background-image: url(../img/arrow_down.svg);
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 41px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+.menu {
+  padding-top: 45px;
+  position: relative;
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-light;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-light;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-light;
+  }
+}
