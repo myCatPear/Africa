@@ -16,6 +16,15 @@ section {
   margin-top: 100px;
 }
 
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46px;
+  padding-top: 32px;
+}
+
 .container {
   max-width: 1160px;
   margin: auto;
@@ -155,6 +164,30 @@ section {
 }
 .countries__caption {
   padding: 12px 0 19px 19px;
+}
+
+.direction {
+  background-image: url(../img/direction/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.direction__wrapper {
+  padding-bottom: 50px;
+}
+.direction__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 25px;
+}
+.direction__figure {
+  padding: 0;
+  margin: 0;
+}
+.direction__figcaption {
+  color: #fff;
+  width: 232px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+$color-light: #fff;
+$color-dark: #1f1e1e;
+$color-accent: #886239;
+
 html,
 body,
 p {
@@ -14,9 +18,14 @@ p {
 section {
   margin-top: 100px;
 }
-$color-light: #fff;
-$color-dark: #1f1e1e;
-$color-accent: #886239;
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46px;
+  padding-top: 32px;
+}
 
 .container {
   max-width: 1160px;
@@ -157,5 +166,29 @@ $color-accent: #886239;
   }
   &__caption {
     padding: 12px 0 19px 19px;
+  }
+}
+
+.direction {
+  background-image: url(../img/direction/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  &__wrapper {
+    padding-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 25px;
+  }
+  &__figure {
+    padding: 0;
+    margin: 0;
+  }
+  &__figcaption {
+    color: $color-light;
+    width: 232px;
+    line-height: 20px;
   }
 }
